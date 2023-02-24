@@ -1,9 +1,16 @@
-# Bluepill USB serial device
+# Bluepill libopencm3 Examples
 
-Boilerplate for using libopencm3 USB CDC on STM32F1 Bluepill board.
+Forked from a project that provided a libopencm3 USB CDC bluepill example
 
-    $ make
-    $ arm-none-eabi-gdb src/program.elf
+* Bluepill USB serial device
+
+---
+
+Boilerplate for using a libopencm3 project STM32F1 Bluepill board using a blackmagic probe.
+
+
+    $ make <project>
+    $ arm-none-eabi-gdb <project>/program.elf
     (gdb) target extended-remote <port>
     (gdb) monitor swdp_scan
     (gdb) attach 1
